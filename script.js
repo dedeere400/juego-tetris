@@ -1,3 +1,7 @@
+<<<<<<< HEAD
+=======
+
+>>>>>>> origin/develop
 const boardWidth = 10;
 const boardHeight = 20;
 
@@ -19,7 +23,11 @@ divBodyHeader.appendChild(divLogo);
 
 const imgHeader = document.createElement('img');
 imgHeader.classList.add('body_container--img');
+<<<<<<< HEAD
 imgHeader.src = 'tetris-logo.jpg';
+=======
+imgHeader.src = './src/tetris-logo.jpg';
+>>>>>>> origin/develop
 divLogo.appendChild(imgHeader);
 
 const mainEl = document.createElement('main');
@@ -39,11 +47,19 @@ divMainSplit.appendChild(divContainerTetris);
 
 // El de arriba es el div que contiene los 200 divs con los 200 mini divs dentro.
 
+<<<<<<< HEAD
 drawBoard('cells', 'cells_padding', boardWidth, boardHeight);
 
 function drawBoard(mainContainerClass, secondContainerClass, width, heigth) {
 
     for (let i = 1; i <= width * heigth; i++) {
+=======
+drawBoard('cells','cells_padding',boardWidth,boardHeight);
+
+function drawBoard(mainContainerClass,secondContainerClass,width,heigth) {
+
+    for (let i = 1; i <= width*heigth; i++) {
+>>>>>>> origin/develop
         const drawBoardOutboardCells = document.createElement('div');
         drawBoardOutboardCells.classList.add(mainContainerClass);
         divContainerTetris.appendChild(drawBoardOutboardCells);
@@ -130,4 +146,11 @@ divRotate.appendChild(up);
 const rotate = document.createElement('span');
 rotate.classList.add('rotate');
 rotate.textContent = 'Rotate';
+<<<<<<< HEAD
 divRotate.appendChild(rotate);
+=======
+divRotate.appendChild(rotate);
+
+
+// console.log(divBody);
+>>>>>>> origin/develop
